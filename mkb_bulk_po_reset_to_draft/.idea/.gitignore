@@ -1,0 +1,20 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# PyCharm project settings
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Odoo specific
+*.egg-info/
+*.pot
+*.mo
+
+# Logs / temp
+*.log
+*.tmp
