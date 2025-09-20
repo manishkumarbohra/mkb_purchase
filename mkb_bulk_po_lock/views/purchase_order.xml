@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_bulk_po_lock" model="ir.actions.server">
+        <field name="name">Bulk Lock Purchase Order</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="binding_model_id" ref="purchase.model_purchase_order"/>
+        <field name="binding_view_types">form,list</field>
+        <field name="state">code</field>
+        <field name="code">
+            for rec in records:
+            rec.bulk_purchase_order_lock()
+        </field>
+    </record>
+</odoo>
